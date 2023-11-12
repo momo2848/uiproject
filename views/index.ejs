@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+          height: 70px;
+          border-bottom: 1px solid black;
+          display: flex;
+          align-items: center;
+        }
+  
+        .nav-right-items {
+          display: flex;
+          margin-left: auto;
+        }
+  
+        .nav-item {
+          margin-left: 10px;
+        }
+  
+        .company-name {
+          margin-left: 20px;
+        }
+  
+        .title {
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 35px;
+          
+        }
+  
+        .subtitle {
+          text-align: center;
+          font-size: 1.25rem;
+          font-weight: 300;
+          margin-bottom: 25px
+        }
+  
+        .main {
+          width: 1000px;
+          margin: 0 auto;
+          margin-top: 60px;
+        }
+  
+        .prices {
+          display: flex;
+        }
+  
+        .price-item {
+          width: 350px;
+          height: 470px;
+          border: 1px solid black;
+          margin: 20px;
+          border-radius: 15px;
+          text-align: center;
+        }
+  
+        .price-item-title {
+          font-size: 1.5rem;
+          height: 53px;
+          
+          margin-bottom: 5px;
+          text-align: center;
+        }
+  
+        .price-item-price {
+          font-size: 2.3rem;
+          font-weight: bold;
+          padding: 20px;
+        }
+  
+        .price-item-button {
+          padding: .5rem 1rem;
+          font-size: 1.25rem;
+          line-height: 1.5;
+          border-radius: .3rem;
+          color: #007bff;
+          background-color: transparent;
+          background-image: none;
+          border-color: #007bff;
+          margin : 30px auto;
+          
+        }
+  
+        .price-item-button--active {
+          background-color: #007bff;
+          color: white;
+        }
+  
+        .price-item-detail {
+          margin-bottom: 5px;
+          font-size: 18px;
+        }
+
+        .input_center{
+            left: 50%; 
+        }
+      </style>
+</head>
+<body>
+    <div class="main">
+        <br><br><br>
+        <div class="title">
+            인공지능 체력증진 프로그램에 오신 걸 환영합니다. ^^
+        </div>
+        <div class="subtitle">
+            운동 후 전송 버튼을 클릭하면 자동으로 운동 실천 정보가 전송됩니다.
+        </div>
+    </div>
+    <!--
+    <ul>
+    <% for (comment of comments) { %>
+        <li> <%= comment.id %><%= comment.content %></li>
+        <form action="/update/<%= comment.id %>" method="post">
+            <input type="text" name="content">
+            <input type="submit" value="수정하기">   
+        </form>
+        <form action="/delete/<%= comment.id %>" method="post">
+            
+            <input type="submit" value="삭제하기">   
+        </form>
+        
+    <%} %>
+    </ul>
+    -->
+
+    <form action="/login" method="post">
+        
+        <div class="price-item-title">
+            ID &nbsp : <input type="text"  name="student_id"><br>
+            PW : <input type="text"  name="student_pass"><br>
+        
+            <input class="price-item-button price-item-button--active" type="submit" value="운동하러가기">
+        </div>
+        
+    </form>
+    
+</body>
+</html>

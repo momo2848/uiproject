@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Enhance Your Physical Strength" content="SPORTS PROGRAM">
+    <title>MODU-PROJECT</title>
+    <!--<link href="style.css" rel="stylesheet" type="text/css" /> -->
+    <style>
+      .nav {
+        height: 70px;
+        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-right-items {
+        display: flex;
+        margin-left: auto;
+      }
+
+      .nav-item {
+        margin-left: 10px;
+      }
+
+      .nav-item-right {
+        margin-left: 10px;
+        margin-left: auto;
+        color: red;
+        
+      }
+
+      .company-name {
+        margin-left: 20px;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 25px
+      }
+
+      .subtitle {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-bottom: 25px
+      }
+
+      .main {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 60px;
+      }
+
+      .prices {
+        display: flex;
+      }
+
+      .price-item {
+        width: 350px;
+        height: 470px;
+        border: 1px solid black;
+        margin: 20px;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .price-item-title {
+        font-size: 1.5rem;
+        background: rgba(0,0,0,.03);
+        height: 53px;
+        line-height: 53px;
+        border-bottom: 1px solid black;
+        margin-bottom: 15px;
+      }
+
+      .price-item-price {
+        font-size: 2.3rem;
+        font-weight: bold;
+        padding: 20px;
+      }
+
+      .price-item-button {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+        color: #007bff;
+        background-color: transparent;
+        background-image: none;
+        border-color: #007bff;
+        margin-top: 30px;
+      }
+
+      .price-item-button--active {
+        background-color: #007bff;
+        color: white;
+      }
+
+      .price-item-detail {
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav"> 
+      <div class="company name">
+        SPORT
+      </div>
+      <div class="nav-item"></div>
+      <a href="https://classroom.google.com/" target="_blank">
+        <div class="nav-item">운동 실천 인증하러 가기[TOUCH]</div>
+      </a>
+      <div class="nav-item-right">
+        <%= student_id %>님 반갑습니다.
+      </div>
+      <div class="nav-item"></div>
+      </div>
+    <div class="main">
+      <div class="title">
+        인공지능 교수학습 프로그램[배구]
+      </div>
+      <div class="subtitle">
+      이 프로그램은 경쟁 영역의 하나인 배구 종목의 운동기능 향상과 운동보조 기능 지원을 위해 개발되었습니다.
+      열심히 참여해봅시다.  
+      </div>
+
+      <div class="prices">
+        <div class="price-item">
+          <div class="price-item-title">
+            동작1
+          </div>
+          <img src="/img/squat image1_v.png" width="200" height="150"/>
+          <div class="price-item-price">
+            언더핸드 패스          
+          </div>
+          <a href="https://dic.kumsung.co.kr/web/smart/detail.do?headwordId=11178&findCategory=B002009&findBookId=35" target="_blank">
+              운동 정보 보러 가기[TOUCH]
+          </a>
+          <a href="underhandPage?student_id=<%= student_id %>&id=<%= id %> " target="_self">
+            <button class="price-item-button price-item-button--active">
+              시작하기
+            </button>
+          </a>
+        </div>
+        <div class="price-item">
+          <div class="price-item-title">
+            동작2
+          </div>
+          <img src="/img/pushup image1_v.png" width="200" height="150"/>
+          <div class="price-item-price">
+            오버핸드 패스
+          </div>
+          <a href="https://dic.kumsung.co.kr/web/smart/detail.do?headwordId=11177&findCategory=B002009&findBookId=35" target="_blank">
+              운동 정보 보러 가기[TOUCH]
+          </a>
+          <a href="overhandPage?student_id=<%= student_id %>&id=<%= id %> " target="_self">
+            <button class="price-item-button price-item-button--active">
+              시작하기
+            </button>
+          </a>
+        </div>
+        <div class="price-item">
+          <div class="price-item-title">
+            동작3
+          </div>
+          <img src="/img/burpee image1_v.png" width="200" height="150"/>
+          <div class="price-item-price">
+            서브
+          </div>
+          <a href="https://dic.kumsung.co.kr/web/smart/detail.do?headwordId=11180&findCategory=B002009&findBookId=35" target="_blank">
+              운동 정보 보러 가기[TOUCH]
+          </a>
+         <a href="servePage?student_id=<%= student_id %>&id=<%= id %> " target="_self">
+            <button class="price-item-button price-item-button--active">
+              시작하기
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
